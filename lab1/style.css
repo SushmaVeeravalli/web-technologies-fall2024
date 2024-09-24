@@ -1,0 +1,105 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:pink;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+.profile-img {
+    max-width: 200px; 
+    height: auto; 
+    display: block;
+    margin: 10px auto; 
+    border-radius: 50%; 
+    border: 3px solid #ffc0cb; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    float: left;
+}
+header {
+    background-color:blueviolet;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 20px 0;
+}
+
+
+img {
+    width: 35%; 
+    height: 30%;
+    border-radius: 5px;
+}
+
+.cupcake-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.cupcake {
+    flex: 1 1 300px;
+    margin: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.cupcake h3 {
+    color: #d35400; /
+}
+
+
+blockquote {
+    font-style: italic;
+    border-left: 5px solid #d35400;
+    margin: 20px 0;
+    padding-left: 15px;
+}
+
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+
+th, td {
+    border: 1px solid black; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+th {
+    background-color: #f4f4f4; 
+}
+
+footer {
+    background-color: #ffccff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .cupcake-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cupcake {
+        flex: 1 1 100%;
+    }
+}
